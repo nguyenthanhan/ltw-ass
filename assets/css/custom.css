@@ -1,0 +1,153 @@
+/* Hieu ung truot chu */
+.truot{
+    display:inline-block;
+}
+.truot:after{content:'';
+    display:block;
+    height:3px;
+    width:0;
+    background:transparent;
+    transition:width .5s ease,background-color .5s ease;
+}
+.truot:hover:after{
+    width:100%;
+    background:rgb(177, 176, 176);
+}
+.truot2{
+    display:inline-block;
+    position:relative;
+    padding-bottom:3px;
+}
+.truot2:after{
+    content:'';
+    display:block;
+    position:absolute;
+    right:0;
+    bottom:0;height:3px;
+    width:0;
+    background:transparent;
+    transition:width .5s ease,background-color .5s ease}
+.truot2:hover:after{
+    width:100%;
+    background:rgb(255, 255, 255);
+}
+
+.title-carousel-card {
+    color: #000;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+
+#relative-pos2{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+#relative-pos2 a{
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+}
+/*Transparent Borders with background-clip ---------------------------------*/
+
+.transparent {
+    position:absolute;
+    -moz-background-clip: padding-box; 
+    -webkit-background-clip: padding-box; 
+    background-clip: padding-box; /*Transparent here*/
+    /* border: 20px solid rgba(0, 0, 0, 0.3); */
+    bottom: 25px;
+    right:0px;
+    background-color:rgb(121, 121, 121);
+}
+
+.border-white {
+    border: #fff solid 1px;
+}
+
+.pd-top {
+    padding-top: 10px;
+}
+
+.pd-bottom {
+    padding-bottom: 10px;
+}
+
+#go-to-top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #go-to-top:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+/*992*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page-header-height {
+  height: 50vh !important;
+}
+
+.link-color-white {
+  color: white;
+}
